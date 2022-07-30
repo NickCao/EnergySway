@@ -11,3 +11,5 @@ zbus_systemd = { version = "0.0.4", features = [ "systemd1" ] }
 tokio = { version = "1.20.1", features = ["full"] }
 anyhow = "1"
 async-recursion = "1.0.0"
+log = "0.4.17"
+simple_logger = "2.2.0"
