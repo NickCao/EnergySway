@@ -5,7 +5,6 @@ edition = "2021"
 
 [dependencies]
 swayipc = "3.0.0"
-libc = "0.2"
 zbus = "2.3.2"
 zbus_systemd = { version = "0.0.4", features = [ "systemd1" ] }
 tokio = { version = "1.20.1", features = ["full"] }
