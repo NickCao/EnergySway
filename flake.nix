@@ -10,6 +10,7 @@
         devShell = mkShell {
           nativeBuildInputs = [ rust-analyzer rustfmt clippy ];
           inputsFrom = [ packages.default ];
+          RUSTC_BOOTSTRAP = 1;
         };
         packages = {
           default = packages.energy-sway;
@@ -19,6 +20,9 @@
             cargoLock = {
               lockFile = ./Cargo.lock;
             };
+            nativeBuildInputs = [ pkg-config ];
+            buildInputs = [ dbus ];
+            RUSTC_BOOTSTRAP = 1;
           };
         };
       });
